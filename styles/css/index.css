@@ -100,6 +100,7 @@ img {
   border: 0;
 }
 svg:not(:root) {
+  display: inline;
   overflow: hidden;
 }
 figure {
@@ -242,7 +243,7 @@ table {
   }
 }
 p {
-  margin: 0 0 10px;
+  margin: 0 0 0 0px;
 }
 /*.lead {
   margin-bottom: @line-height-computed;
@@ -543,7 +544,6 @@ samp {
 code {
   padding: 2px 4px;
   font-size: 90%;
-  color: #c7254e;
   background-color: #f9f2f4;
   white-space: nowrap;
   border-radius: 4px;
@@ -3458,8 +3458,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   z-index: 1000;
-  min-height: 60px;
-  margin-bottom: 20px;
+  min-height: 40px;
+  height: 40px;
+/*  margin-bottom: 20px;*/
   border: 1px solid transparent;
 }
 .navbar:before,
@@ -3630,8 +3631,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
   float: right;
   margin-right: 15px;
   padding: 9px 10px;
-  margin-top: 13px;
-  margin-bottom: 13px;
+  margin-top: 3px;
+  margin-bottom: 3px;
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -3691,8 +3692,10 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
   .navbar-nav > li > a,
   .docs-nav .navbar-nav > li > span {
-    padding-top: 20px;
+/*    padding-top: 20px;
     padding-bottom: 20px;
+    border-right: 1px solid #212121;
+    border-left: 1px solid #212121;*/
   }
 }
 @media (min-width: 768px) {
@@ -5413,7 +5416,7 @@ button.close {
 body {
   position: relative;
   /* For scrollyspy */
-  padding-top: 50px;
+/*  padding-top: 50px;*/
   /* Account for fixed navbar */
 }
 /* Keep code small in tables on account of limited space */
@@ -6271,7 +6274,7 @@ hr {
   }
 }
 .banner {
-  padding: 15px 20px;
+  padding: 10px 20px;
   color: #777;
   background-color: #fafafa;
   border-top: 1px solid #fff;
@@ -6320,7 +6323,7 @@ hr {
 }
 /* Page headers */
 .docs-header {
-  padding: 30px 15px 50px;
+  padding: 0px 15px 30px 50px;
   /* side padding builds on .container 15px, so 30px */
   font-size: 16px;
   text-align: center;
@@ -6355,7 +6358,7 @@ hr {
 .footer {
   padding-top: 40px;
   padding-bottom: 30px;
-  margin-top: 100px;
+  margin-top: 30px;
   color: #777;
   background: #fff;
   text-align: center;
@@ -6516,10 +6519,11 @@ hr {
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.07);
 }
 .docs-nav .navbar-collapse {
+  background: #1d365d;
   border-color: #111f36;
 }
 .docs-nav .container .navbar-brand {
-  margin: 12px 0 0;
+  margin: 10px 0 10px 0;
   width: 100px;
   padding: 0;
 }
@@ -7118,7 +7122,59 @@ td.visible-print {
   }
 }
 
-:target{
+/*:target{
     padding-top: 70px;
     margin-top: -70px;
+}*/
+
+.docs-nav ul li.current a{
+    box-shadow: 1px 1px 24px rgba(0, 0, 0, 0.8) inset;
+}
+
+.icon-envelope:before{
+    content: "\f0e0";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    margin-right: 5px ;
+}
+
+.icon-github:before{
+    content: "\f092";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    margin-right: 5px ;
+}
+
+.icon-linkedin:before{
+    content: "\f08c";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    margin-right: 5px ;
+}
+
+.banner .container a#BannerCategory{
+    background: #99b9c4;
+    padding: 6px;
+    margin: 0px 6px 0px 0px;
+    border-radius: 8%;
+    color: #fff;
+    font-size: larger;
+}
+
+.banner .container a#BannerTag{
+    background: rgba(162, 162, 162, 0.8);
+    padding: 3px;
+    margin: 0px 2px 0px 2px;
+    border-radius: 8%;
+    color: #fff;
+}
+
+#HidingSpace{
+  margin-top: 40px;
 }

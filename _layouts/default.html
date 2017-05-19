@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
-
   <body class="index">
-
-    {% include header.html %}
+  	<div id="HidingSpace"></div>
     {% include docs_header.html %}
-    {% if page.title %}
-      {% include banner.html %}
-    {% endif %}
-
+    {% include header_windows.html %}
+    {% include banner.html %}
     {{ content }}
     
     {% include footer.html %}
-
   </body>
 </html>
