@@ -2,9 +2,9 @@
 <div class="banner">
   <div class="container">
   	{% if page.categories != null %}
-    	<a id="BannerCategory" href="{{ '/categories/' | prepend: site.baseurl }}#{{page.categories}}-ref">{{page.categories}}</a>	|
+    	<a id="BannerCategory" href="{{ '/categories/' | prepend: site.baseurl }}#ref-{{page.categories[0]|remove: '/' |remove: '+'}}">{{page.categories}}</a>	|
     	{% for CurrentTag in page.tags %}
-    		<a id="BannerTag" href="{{ '/tag/' | prepend: site.baseurl }}#{{CurrentTag}}-ref">{{CurrentTag}}</a>
+    		<a id="BannerTag" href="{{ '/tag/' | prepend: site.baseurl }}#ref-{{CurrentTag | remove: '/'| remove: '+'}}">{{CurrentTag}}</a>
     	{% endfor %}
     {% else %}
     	{{ site.banner }}
