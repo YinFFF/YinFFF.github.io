@@ -7162,12 +7162,11 @@ td.visible-print {
 
 .banner .container a#BannerCategory{
     background: #99b9c4;
-    padding: 6px;
-    margin: 0px 6px 5px 0px;
+    padding: 3px;
+    margin: 0px 2px 2px 2px;
     border-radius: 8%;
     color: #fff;
-    font-size: larger;
-    line-height: 20px;
+    font-size: smaller;
     display: inline-block;
 }
 
@@ -7176,6 +7175,7 @@ td.visible-print {
     padding: 3px;
     margin: 0px 2px 2px 2px;
     border-radius: 8%;
+    font-size: smaller;
     color: #fff;
     display: inline-block;
 }

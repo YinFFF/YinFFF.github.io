@@ -1,11 +1,15 @@
 
 <div class="banner">
   <div class="container">
-  	{% if page.categories != null %}
-    	<a id="BannerCategory" href="{{ '/categories/' | prepend: site.baseurl }}#ref-{{page.categories[0]|remove: '/' |remove: '+'}}">{{page.categories}}</a>	|
+    {% if page.categories != null %}
+	<div>
+		<i class="fa fa-lg fa-folder"></i> 
+	    	<a id="BannerCategory" href="{{ '/categories/' | prepend: site.baseurl }}#ref-{{page.categories[0]|remove: '/' |remove: '+'}}">{{page.categories}}</a>	|
+	<i class="fa fa-lg fa-tags"></i>
     	{% for CurrentTag in page.tags %}
     		<a id="BannerTag" href="{{ '/tag/' | prepend: site.baseurl }}#ref-{{CurrentTag | remove: '/'| remove: '+'}}">{{CurrentTag}}</a>
     	{% endfor %}
+	</div>
     {% else %}
     	{{ site.banner }}
     {% endif %}
