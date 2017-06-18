@@ -7,7 +7,7 @@ resume_site:
 github: https://github.com/YinFFF
 linkedin: https://www.linkedin.com/in/yinfan519/
 #baseurl: "/LessOrMore"
-description: This is my blog
+description: fan
 meta_description: meta_description
 motto: motto
 banner: 
@@ -31,7 +31,7 @@ kramdown:
 
 gems: [jekyll-paginate]
 
-host: 192.168.232.137
+host: 192.168.0.134
 port: 80
 
 #FB:
