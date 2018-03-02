@@ -6089,6 +6089,7 @@ h1,
 h2,
 h3 {
   margin-top: 20px;
+  padding-top: -50px;
   margin-bottom: 15px;
 }
 
@@ -6618,8 +6619,8 @@ h3 .anchor:hover {
 }
 .anchor-target {
   position: absolute;
-  margin-top: -80px;
-  padding-top: 80px;
+  margin-top: -50px;
+  padding-top: 50px;
 }
 .anchor-target-small {
   margin-top: -40px;

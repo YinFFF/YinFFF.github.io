@@ -31,7 +31,7 @@ kramdown:
 
 gems: [jekyll-paginate]
 
-host: 192.168.0.134
+host: 10.0.0.9
 port: 80
 
 #FB:
