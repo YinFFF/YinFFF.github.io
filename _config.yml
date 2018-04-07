@@ -22,7 +22,7 @@ exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 highlighter: rouge
 
 # Build settings
-markdown: kramdown
+markdown:  kramdown
 kramdown:
   auto_ids: true
   auto_id_prefix: "ref-"
@@ -31,7 +31,7 @@ kramdown:
 
 gems: [jekyll-paginate]
 
-host: 10.0.0.9
+host: 192.168.0.104
 port: 80
 
 #FB:

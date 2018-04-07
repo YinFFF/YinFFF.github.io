@@ -64,9 +64,7 @@ tags: 智能指针 C++11
    }
    ```
 
-
-<img src="/images/share_ptr3.png" width="60%" />
-
+   <img src="/images/share_ptr3.png" width="60%" />
 
    产生这种情况的原因很明显，因为计数区在堆中，test2的构造函数无法知道mem对象是否已经被其他share_ptr所指向了。这种情况会导致test1和test2的析构函数对mem进行两次内存释放，程序会出错。
 
